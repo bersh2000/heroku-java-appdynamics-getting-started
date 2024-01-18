@@ -1,1 +1,1 @@
-web: java -jar target/java-getting-started-1.0.0-SNAPSHOT.jar
+web: java -Xms156m -Xmx412m -javaagent:target/appd/appagent/javaagent.jar -Dappdynamics.agent.applicationName=MyHerokuAppD -Dappdynamics.agent.tierName=HiIAmYourTier1 -Dappdynamics.agent.nodeName=AndIAMYourNode1 -jar target/java-getting-started-1.0.0-SNAPSHOT.jar
